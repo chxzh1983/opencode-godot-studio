@@ -1,0 +1,63 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+  "agent": {
+    "director": {
+      "description": "Creative and technical lead. Makes final decisions on vision, architecture, and resolves conflicts.",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "bash": false,
+        "glob": true,
+        "grep": true
+      }
+    },
+    "gamedesigner": {
+      "description": "Game design lead. Owns mechanics, systems, and level design decisions.",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true,
+        "grep": true
+      }
+    },
+    "godot-dev": {
+      "description": "Godot 2D programmer. Implements game features in GDScript.",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true
+      }
+    },
+    "artist": {
+      "description": "2D artist. Handles sprites, UI visuals, and visual effects.",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": true,
+        "glob": true
+      }
+    },
+    "qa": {
+      "description": "QA tester. Tests features, finds bugs, validates balance.",
+      "mode": "subagent",
+      "tools": {
+        "read": true,
+        "write": true,
+        "edit": false,
+        "bash": true,
+        "glob": true,
+        "grep": true
+      }
+    }
+  }
+}

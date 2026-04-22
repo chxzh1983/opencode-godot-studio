@@ -1,0 +1,30 @@
+# Godot specific
+*.import
+*.tres
+*.tscn
+*.ttf
+*.otf
+
+# Build files
+bin/
+Godot_v4*.exe
+Godot_v4*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OpenCode (optional - keep if you want to commit)
+# .opencode/
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+~*
