@@ -59,23 +59,37 @@ opencode
 ## 项目结构
 
 ```
-my-game/
-├── AGENTS.md                    # 项目规则和工作流程
-├── opencode.json               # OpenCode 配置
-├── .opencode/
-│   └── agents/               # 智能体定义
-│       ├── director.md       # 创意/技术总监
-│       ├── gamedesigner.md   # 游戏设计
-│       ├── godot-dev.md     # Godot 2D 编程
-│       ├── artist.md       # 2D 美术和视觉
-│       └── qa.md          # 测试和 QA
-├── docs/                      # 参考文档
-│   ├── godot-2d-patterns.md
-│   └── scene-architecture.md
-├── src/                       # 游戏源码
-├── assets/                    # 精灵图、音频、着色器
-└── design/                   # 游戏设计文档
+my-game/                          # 框架根目录（保持干净）
+├── .opencode/                    # Agent 定义
+│   └── agents/                   # 智能体配置
+├── project/                      # 开发的应用/游戏（所有项目文件放这里）
+│   ├── project.godot            # Godot 项目配置
+│   ├── src/                     # 游戏源码 (GDScript)
+│   ├── assets/                  # 游戏资源（图片、音效等）
+│   ├── design/                  # 游戏设计文档
+│   ├── export/                  # 导出配置
+│   └── icon.svg                 # 项目图标
+├── other/                       # 临时文件（下载、缓存等）
+│   └── .godot/                  # Godot 缓存目录
+├── docs/                        # 框架技术文档
+└── assets/                      # 框架预设资源（可选）
 ```
+
+### 目录规则
+
+**重要：所有项目文件必须放在 `project/` 目录下**
+
+| 文件类型 | 存放位置 |
+|---------|---------|
+| Godot 项目配置 | `project/project.godot` |
+| 游戏源码 | `project/src/` |
+| 游戏资源 | `project/assets/` |
+| 游戏设计文档 | `project/design/` |
+| 导出配置 | `project/export/` |
+| 下载的引擎/工具 | `other/` |
+| Godot 缓存 | `other/.godot/` |
+
+**禁止在根目录创建项目文件**
 
 ## 团队角色
 

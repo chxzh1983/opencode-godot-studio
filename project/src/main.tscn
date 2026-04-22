@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://main"]
+
+[ext_resource type="PackedScene" uid="uid://player" path="res://src/player.tscn" id="1_player"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_player")]
+position = Vector2(640, 540)
+
+[node name="Camera" type="Camera2D" parent="Player"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Floor"]
+position = Vector2(640, 580)
+shape = RectShape2D.new(size = Vector2(1280, 40))
+
+[node name="Color" type="ColorRect" parent="Floor"]
+offset_left = -640.0
+offset_top = -20.0
+offset_right = 640.0
+offset_bottom = 20.0
+color = Color(0.3, 0.3, 0.3, 1)

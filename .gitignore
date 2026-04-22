@@ -1,14 +1,15 @@
-# Godot specific
-*.import
-*.tres
+# Godot project (KEEP - these are your game files!)
 *.tscn
-*.ttf
-*.otf
+*.tres
 
-# Build files
-bin/
-Godot_v4*.exe
-Godot_v4*.pdb
+# Godot cache (ignore)
+.godot/
+other/.godot/
+
+# Godot engine files (ignore - user downloads their own)
+other/Godot_v4*.exe
+other/Godot_v4*.pdb
+other/Godot.zip
 
 # IDE
 .vscode/

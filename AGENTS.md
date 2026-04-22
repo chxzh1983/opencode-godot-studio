@@ -2,18 +2,47 @@
 
 This is a Godot 2D game project built with OpenCode. The project follows a studio-based workflow with specialized agents for different roles.
 
+## Quick Start
+
+1. 双击运行 `other/Godot_v4.5.1-stable_win64.exe`
+2. 点击"导入"选择 `project/project.godot`
+3. 点击"运行"测试基础功能
+
 ## Project Structure
 
 ```
-my-game/
-├── .opencode/
-│   └── agents/           # Agent definitions
-├── src/                 # Game source code (GDScript)
-├── assets/               # Sprites, audio, shaders
-├── design/              # Game design documents
-├── docs/                # Technical documentation
-└── tests/               # Test suites
+my-game/                          # 框架根目录（保持干净）
+├── .opencode/                    # Agent 定义
+│   └── agents/                   # 智能体配置
+├── project/                      # 开发的应用/游戏（所有项目文件放这里）
+│   ├── project.godot            # Godot 项目配置
+│   ├── src/                     # 游戏源码 (GDScript)
+│   ├── assets/                  # 游戏资源（图片、音效等）
+│   ├── design/                  # 游戏设计文档
+│   ├── export/                  # 导出配置
+│   └── icon.svg                 # 项目图标
+├── other/                       # 临时文件（下载、缓存等）
+│   └── .godot/                  # Godot 缓存目录
+├── docs/                        # 框架技术文档
+├── assets/                      # 框架预设资源（可选）
+└── tests/                       # 测试套件（可选）
 ```
+
+### Directory Rules
+
+**重要：所有项目文件必须放在 `project/` 目录下**
+
+| 文件类型 | 存放位置 |
+|---------|---------|
+| Godot 项目配置 | `project/project.godot` |
+| 游戏源码 | `project/src/` |
+| 游戏资源 | `project/assets/` |
+| 游戏设计文档 | `project/design/` |
+| 导出配置 | `project/export/` |
+| 下载的引擎/工具 | `other/` |
+| Godot 缓存 | `other/.godot/` |
+
+**禁止在根目录创建项目文件**
 
 ## Game Type
 - **Engine**: Godot 4.x (2D)
