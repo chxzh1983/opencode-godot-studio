@@ -1,169 +1,167 @@
 <p align="center">
-  <h1>OpenCode Game Studio - Godot 2D</h1>
-  <p>Turn your OpenCode session into a game development studio with specialized AI agents for Godot 2D game development.</p>
+  <h1>OpenCode 游戏工作室 - Godot 2D</h1>
+  <p>使用专业的 AI 智能体团队，让您的 OpenCode 会话变身为完整的游戏开发工作室，专为 Godot 2D 游戏开发而设计。</p>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/OpenCode-Game%20Studio-Godot%202D-blue" alt="OpenCode Game Studio">
   <img src="https://img.shields.io/badge/Godot-4.x-478061" alt="Godot 4.x">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
 </p>
 
 ---
 
-## What Is This?
+## 这是什么？
 
-A professional game development studio framework for **OpenCode** + **Godot 4 (2D)**. Inspired by [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios), adapted for OpenCode.
+**OpenCode 游戏工作室** 是一套专为 **OpenCode** + **Godot 4 (2D)** 设计的专业游戏开发工作室框架。灵感来源于 [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)，针对 OpenCode 进行了适配。
 
-This template gives you:
-- **5 specialized AI agents** (director, game designer, Godot dev, artist, QA)
-- **Studio workflow** with collaboration protocols
-- **Godot 2D patterns** and best practices
-- **Scene architecture** templates
+此模板为您提供：
+- **5 个专业化 AI 智能体**（总监、游戏设计师、Godot 开发者、美术、QA）
+- **工作室工作流程** 协作规范
+- **Godot 2D 最佳实践** 代码模式
+- **场景架构** 模板
 
-## Why Use This?
+## 为什么要使用它？
 
-Building a game solo with AI is powerful — but a single chat session has no structure. This template solves that by giving your AI session the structure of a real game studio:
+独自用 AI 开发游戏很强大，但单独的聊天会话缺乏结构。此模板通过赋予您的 AI 会话一个真实游戏工作室的结构来解决这个问题：
 
-- Specialized agents for different roles
-- Clear decision workflows
-- Code standards enforced
-- QA process included
+- 针对不同角色的专业化智能体
+- 清晰的决策工作流程
+- 代码规范强制执行
+- 包含 QA 测试流程
 
-## Quick Start
+## 快速开始
 
-### Prerequisites
+### 环境要求
 
-- [OpenCode](https://opencode.ai) installed
-- [Godot 4.x](https://godotengine.org) (2D renderer)
+- 安装 [OpenCode](https://opencode.ai)
+- 安装 [Godot 4.x](https://godotengine.org)（2D 渲染器）
 
-### Installation
+### 安装
 
 ```bash
-# Clone this template
-git clone https://github.com/YOUR_USERNAME/opencode-godot-studio.git my-game
+# 克隆此模板
+git clone https://github.com/chxzh1983/opencode-godot-studio.git my-game
 cd my-game
 
-# Open in OpenCode
+# 在 OpenCode 中打开
 opencode
 ```
 
-### Usage
+### 使用方法
 
-Once in OpenCode:
+进入 OpenCode 后：
 
-1. Run `/init` to initialize the project
-2. Choose an agent to work with (use `@agent-name`)
-3. Follow the workflow in `AGENTS.md`
+1. 运行 `/init` 初始化项目
+2. 使用 `@智能体名称` 选择要协作的 AI 智能体
+3. 按照 `AGENTS.md` 中的工作流程进行
 
-## Project Structure
+## 项目结构
 
 ```
 my-game/
-├── AGENTS.md                    # Project rules and workflow
-├── opencode.json               # OpenCode configuration
+├── AGENTS.md                    # 项目规则和工作流程
+├── opencode.json               # OpenCode 配置
 ├── .opencode/
-│   └── agents/               # Agent definitions
-│       ├── director.md       # Creative/technical lead
-│       ├── gamedesigner.md   # Game design
-│       ├── godot-dev.md     # Godot 2D programming
-│       ├── artist.md       # 2D art and visuals
-│       └── qa.md          # Testing and QA
-├── docs/                      # Reference documentation
+│   └── agents/               # 智能体定义
+│       ├── director.md       # 创意/技术总监
+│       ├── gamedesigner.md   # 游戏设计
+│       ├── godot-dev.md     # Godot 2D 编程
+│       ├── artist.md       # 2D 美术和视觉
+│       └── qa.md          # 测试和 QA
+├── docs/                      # 参考文档
 │   ├── godot-2d-patterns.md
 │   └── scene-architecture.md
-├── src/                       # Game source code
-├── assets/                    # Sprites, audio, shaders
-└── design/                   # Game design documents
+├── src/                       # 游戏源码
+├── assets/                    # 精灵图、音频、着色器
+└── design/                   # 游戏设计文档
 ```
 
-## Team Roles
+## 团队角色
 
-| Agent | Role | Description |
-|-------|------|-------------|
-| `director` | Creative/Technical Lead | Vision, decisions, architecture |
-| `gamedesigner` | Game Design | Mechanics, systems, level design |
-| `godot-dev` | Programmer | GDScript implementation |
-| `artist` | Artist | 2D assets, visual direction |
-| `qa` | QA | Testing, bug finding |
+| 智能体 | 角色 | 描述 |
+|-------|------|------|
+| `director` | 创意/技术总监 | 愿景、决策、架构 |
+| `gamedesigner` | 游戏设计 | 机制、系统、关卡设计 |
+| `godot-dev` | 程序员 | GDScript 实现 |
+| `artist` | 美术 | 2D 资源、视觉方向 |
+| `qa` | 测试 | 测试、找 bug |
 
-## Agent Collaboration
-
-### Example Workflow
+## 智能体协作示例
 
 ```
-You: "I want to add a double jump ability"
+您："我想添加二段跳技能"
 
-@gamedesigner: "What's the double jump?
-- Jump height: 2 tiles or 3?
-- Can chain with wall jump?
-- Any cooldown?"
+@gamedesigner："请问二段跳的具体设计：
+- 跳跃高度：2 格还是 3 格？
+- 能和墙壁跳连招吗？
+- 有冷却时间吗？"
 
-[Discussion about design]
+[讨论设计细节]
 
-@godot-dev: "Implementation approach:
-- Option A: Simple (reset velocity)
-- Option B: Full air jump counter
+@godot-dev："实现方案：
+- 方案 A：简单（重置速度）
+- 方案 B：完整空中跳跃计数器
 
-Which do you prefer?"
+您更喜欢哪个？"
 
-[You decide]
+[您做出决定]
 
-@godot-dev implementations
-@qa tests the feature
+@godot-dev 实现功能
+@qa 测试功能
 ```
 
-## Godot 2D Best Practices
+## Godot 2D 最佳实践
 
-### Scene Architecture
+### 场景架构
 
 ```gdscript
-# Use proper node types
-extends CharacterBody2D  # For player/enemies
-extends Area2D           # For triggers/pickups
+# 使用正确的节点类型
+extends CharacterBody2D  # 玩家/敌人
+extends Area2D           # 触发器/拾取物
 ```
 
-### GDScript Standards
+### GDScript 规范
 
 ```gdscript
-# Always use static typing
+# 始终使用静态类型
 var speed: float = 200.0
 
-# Use signals for communication
+# 使用信号进行通信
 signal health_changed(current: int, maximum: int)
 
-# Export for configurable values
+# 使用 @export 导出可配置值
 @export var max_health: int = 100
 ```
 
-See `docs/godot-2d-patterns.md` for more patterns.
+更多代码模式请参阅 `docs/godot-2d-patterns.md`。
 
-## Documentation
+## 文档
 
-- [AGENTS.md](AGENTS.md) - Project rules and workflow
-- [docs/godot-2d-patterns.md](docs/godot-2d-patterns.md) - Code patterns
-- [docs/scene-architecture.md](docs/scene-architecture.md) - Scene structure
+- [AGENTS.md](AGENTS.md) - 项目规则和工作流程
+- [docs/godot-2d-patterns.md](docs/godot-2d-patterns.md) - 代码模式
+- [docs/scene-architecture.md](docs/scene-architecture.md) - 场景结构
 
-## Customization
+## 自定义
 
-This is a template. Feel free to customize:
+这是一个模板。请随意自定义：
 
-- Add/remove agents in `.opencode/agents/`
-- Modify workflow in `AGENTS.md`
-- Add Godot-specific patterns to `docs/`
+- 在 `.opencode/agents/` 中添加/删除智能体
+- 修改 `AGENTS.md` 中的工作流程
+- 在 `docs/` 中添加 Godot 特定模式
 
-## Contributing
+## 贡献
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
+欢迎贡献！请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-## License
+## 许可证
 
-MIT License - See [LICENSE](LICENSE).
+MIT 许可证 - 请参阅 [LICENSE](LICENSE)。
 
-## Credits
+## 致谢
 
-- Inspired by [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
-- Built for [OpenCode](https://opencode.ai) and [Godot](https://godotengine.org)
+- 灵感来源于 [Claude Code Game Studios](https://github.com/Donchitos/Claude-Code-Game-Studios)
+- 为 [OpenCode](https://opencode.ai) 和 [Godot](https://godotengine.org) 构建
 
 ---
 
